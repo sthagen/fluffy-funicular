@@ -521,6 +521,12 @@ tests/test_lint.py ................                                  <span class
 
 <span class="o">=============================</span> <span class="m">21</span> passed <span class="k">in</span> <span class="m">32</span>.26s <span class="o">=========================</span>
 </code></pre></div>
+<p>For intermediate local development feedback (exclude the slow tests and<br />
+report in a terse manner) excluding the complete corpus tests:
+<div class="highlight"><pre><span></span><code>$ <span class="nv">PYTEST_ADDOPTS</span><span class="o">=</span><span class="s2">&quot;-q -m &#39;not slow&#39;&quot;</span> pytest
+...................                                                  <span class="o">[</span><span class="m">100</span>%<span class="o">]</span>
+<span class="m">19</span> passed, <span class="m">2</span> deselected <span class="k">in</span> <span class="m">10</span>.02s
+</code></pre></div></p>
 <h4 id="executing-code-quality-analysis">Executing Code Quality Analysis</h4>
 <p>Running <code>prospector</code>:</p>
 <div class="highlight"><pre><span></span><code>$ prospector
