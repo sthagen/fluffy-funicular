@@ -497,7 +497,7 @@ to obtain insatll and initial usage instructions for the docker image.</p>
 <h2 id="inside-a-repository-checkout">Inside a Repository Checkout</h2>
 <h3 id="using-the-module">Using the Module</h3>
 <p>Executing the <code>csaf_lint</code> module (first two executions succeed, third fails):</p>
-<div class="highlight"><pre><span></span><code>$ python -m csaf_lint tests/fixtures/csaf-2.0/baseline/spam/01.json
+<p><div class="highlight"><pre><span></span><code>$ python -m csaf_lint tests/fixtures/csaf-2.0/baseline/spam/01.json
 $ python -m csaf_lint tests/fixtures/cvrf-no-version-given/is_wun_two.xml
 $ python -m csaf_lint examples/empty_object.json <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> grep -i validat
     <span class="k">return</span> <span class="m">0</span> <span class="k">if</span> validate<span class="o">(</span>document, schema<span class="o">)</span> is None <span class="k">else</span> <span class="m">1</span>
@@ -507,6 +507,11 @@ $ python -m csaf_lint examples/empty_object.json <span class="m">2</span>&gt;<sp
 jsonschema.exceptions.ValidationError: <span class="s1">&#39;document&#39;</span> is a required property
 Failed validating <span class="s1">&#39;required&#39;</span> <span class="k">in</span> schema:
 </code></pre></div>
+Switching between editor versions is supported by explicitly stating<br />
+the path for the schema like for the 2021.03.07 editor version:
+<div class="highlight"><pre><span></span><code>$ <span class="nb">export</span> <span class="nv">SCHEMA</span><span class="o">=</span><span class="s2">&quot;csaf_lint/schema/csaf/2021.03.07/csaf.json&quot;</span>
+$ python -m csaf_lint <span class="nv">$SCHEMA</span> validate_me_as_csaf.json
+</code></pre></div></p>
 <h4 id="executing-the-tests">Executing the Tests</h4>
 <p>Executing the tests per <code>pytest</code>:</p>
 <div class="highlight"><pre><span></span><code>$ <span class="nv">pytest</span>
