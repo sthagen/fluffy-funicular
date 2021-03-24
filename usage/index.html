@@ -490,20 +490,24 @@
 <p>Assuming there is a valid CSAF v2.0 file inside in the current directory
 with the name <code>valid_csaf_v_2_0.json</code> validation works like this:</p>
 <p><div class="highlight"><pre><span></span><code>$ csaf-lint valid_csaf_v_2_0.json
+<span class="m">2021</span>-03-24 <span class="m">20</span>:08:55 INFO <span class="o">[</span>csaf-lint<span class="o">]</span>: Validation<span class="o">(</span>JSON<span class="o">)</span>: <span class="nv">code</span><span class="o">=</span><span class="m">0</span>, <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;OK&#39;</span>
 </code></pre></div>
 resulting in no output at all and a return code of <code>0</code> for success.</p>
 <p>Another way to obtain the same result is to provide the document per standard input like:</p>
 <div class="highlight"><pre><span></span><code>$ csaf-lint &lt; valid_csaf_v_2_0.json
+<span class="m">2021</span>-03-24 <span class="m">20</span>:08:57 INFO <span class="o">[</span>csaf-lint<span class="o">]</span>: Validation<span class="o">(</span>JSON<span class="o">)</span>: <span class="nv">code</span><span class="o">=</span><span class="m">0</span>, <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;OK&#39;</span>
 </code></pre></div>
 <h3 id="using-the-python-module-csaf_lint">Using the Python Module <code>csaf_lint</code></h3>
 <p>Again, assuming there is a valid CSAF v2.0 file inside in the current directory
 with the name <code>valid_csaf_v_2_0.json</code> validation works like this
 (note the underscore instead of the dash separating the words <code>csaf</code> and <code>lint</code>):</p>
 <p><div class="highlight"><pre><span></span><code>$ python -m csaf_lint valid_csaf_v_2_0.json
+<span class="m">2021</span>-03-24 <span class="m">20</span>:08:58 INFO <span class="o">[</span>csaf-lint<span class="o">]</span>: Validation<span class="o">(</span>JSON<span class="o">)</span>: <span class="nv">code</span><span class="o">=</span><span class="m">0</span>, <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;OK&#39;</span>
 </code></pre></div>
 resulting in no output at all and a return code of <code>0</code> for success.</p>
 <p>Another way to obtain the same result is to provide the document per standard input like:</p>
 <p><div class="highlight"><pre><span></span><code>$ python -m csaf_lint &lt; valid_csaf_v_2_0.json
+<span class="m">2021</span>-03-24 <span class="m">20</span>:08:59 INFO <span class="o">[</span>csaf-lint<span class="o">]</span>: Validation<span class="o">(</span>JSON<span class="o">)</span>: <span class="nv">code</span><span class="o">=</span><span class="m">0</span>, <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;OK&#39;</span>
 </code></pre></div>
 Also in this install mode (as with <code>pipx</code>) you can call the application <code>csaf-lint</code>.</p>
 <h2 id="using-the-docker-image-shagencsaf-lint">Using the <code>docker</code> image <code>shagen/csaf-lint</code></h2>
@@ -513,19 +517,17 @@ to obtain insatll and initial usage instructions for the docker image.</p>
 <h3 id="using-the-module">Using the Module</h3>
 <p>Executing the <code>csaf_lint</code> module (first two executions succeed, third fails):</p>
 <p><div class="highlight"><pre><span></span><code>$ python -m csaf_lint tests/fixtures/csaf-2.0/baseline/spam/01.json
+<span class="m">2021</span>-03-24 <span class="m">19</span>:20:50 INFO <span class="o">[</span>csaf-lint<span class="o">]</span>: Validation<span class="o">(</span>JSON<span class="o">)</span>: <span class="nv">code</span><span class="o">=</span><span class="m">0</span>, <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;OK&#39;</span>
 $ python -m csaf_lint tests/fixtures/cvrf-no-version-given/is_wun_two.xml
-$ python -m csaf_lint examples/empty_object.json <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> grep -i validat
-    <span class="k">return</span> <span class="m">0</span> <span class="k">if</span> validate<span class="o">(</span>document, schema<span class="o">)</span> is None <span class="k">else</span> <span class="m">1</span>
-  File <span class="s2">&quot;.../fluffy-funicular/csaf_lint/lint.py&quot;</span>, line <span class="m">145</span>, <span class="k">in</span> validate
-    <span class="k">return</span> jsonschema.validate<span class="o">(</span>document, schema, <span class="nv">format_checker</span><span class="o">=</span>conformance<span class="o">)</span>
-  File <span class="s2">&quot;.../site-packages/jsonschema/validators.py&quot;</span>, line <span class="m">934</span>, <span class="k">in</span> validate
-jsonschema.exceptions.ValidationError: <span class="s1">&#39;document&#39;</span> is a required property
-Failed validating <span class="s1">&#39;required&#39;</span> <span class="k">in</span> schema:
+<span class="m">2021</span>-03-24 <span class="m">19</span>:21:15 INFO <span class="o">[</span>csaf-lint<span class="o">]</span>: Validation<span class="o">(</span>XML<span class="o">)</span>: <span class="nv">code</span><span class="o">=</span><span class="m">0</span>, <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;OK&#39;</span>
+$ python -m csaf_lint examples/empty_object.json <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> grep -i validat<span class="p">|</span> head -1
+<span class="m">2021</span>-03-24 <span class="m">19</span>:22:05 ERROR <span class="o">[</span>csaf-lint<span class="o">]</span>: err.message<span class="o">=</span><span class="s2">&quot;&#39;document&#39; is a required property&quot;</span> <span class="o">[</span>err.validator<span class="o">=</span><span class="s1">&#39;required&#39;</span><span class="o">]</span> err.relative_path<span class="o">=</span>deque<span class="o">([])</span>
 </code></pre></div>
 Switching between editor versions is supported by explicitly stating<br />
 the path for the schema like for the 2021.03.19 editor version:
 <div class="highlight"><pre><span></span><code>$ <span class="nb">export</span> <span class="nv">SCHEMA</span><span class="o">=</span><span class="s2">&quot;csaf_lint/schema/csaf/2021.03.19/csaf.json&quot;</span>
 $ python -m csaf_lint <span class="nv">$SCHEMA</span> validate_me_as_csaf.json
+<span class="m">2021</span>-03-24 <span class="m">19</span>:51:30 INFO <span class="o">[</span>csaf-lint<span class="o">]</span>: Validation<span class="o">(</span>JSON<span class="o">)</span>: <span class="nv">code</span><span class="o">=</span><span class="m">0</span>, <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;OK&#39;</span>
 </code></pre></div></p>
 <h4 id="executing-the-tests">Executing the Tests</h4>
 <p>Executing the tests per <code>pytest</code>:</p>
@@ -549,7 +551,7 @@ report in a terse manner) excluding the complete corpus tests:
 </code></pre></div></p>
 <h4 id="executing-code-quality-analysis">Executing Code Quality Analysis</h4>
 <p>Running <code>prospector</code>:</p>
-<div class="highlight"><pre><span></span><code>$ prospector
+<p><div class="highlight"><pre><span></span><code>$ prospector
 Check <span class="nv">Information</span>
 <span class="o">=================</span>
          Started: ...
@@ -561,6 +563,10 @@ Check <span class="nv">Information</span>
   Libraries Used:
        Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
   Messages Found: <span class="m">0</span>
+</code></pre></div>
+Running <code>mypy</code>:</p>
+<div class="highlight"><pre><span></span><code>$ mypy csaf_lint
+Success: no issues found <span class="k">in</span> <span class="m">4</span> <span class="nb">source</span> files
 </code></pre></div>
                 
               
