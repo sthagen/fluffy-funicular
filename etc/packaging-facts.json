@@ -27,6 +27,8 @@
     "home_page": "https://github.com/sthagen/csaf-lint",
     "keywords": "baseline,body,core,csaf,cvrf,development,envelope,extension,profile,validation",
     "license": "",
+    "license_expression": null,
+    "license_files": null,
     "maintainer": "Stefan Hagen",
     "maintainer_email": "stefan@hagen.link",
     "name": "csaf-lint",
