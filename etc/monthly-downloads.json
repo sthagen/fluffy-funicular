@@ -2,13 +2,8 @@
   "data": [
     {
       "category": "3.10",
-      "date": "2024-05",
-      "downloads": 40
-    },
-    {
-      "category": "3.10",
       "date": "2024-06",
-      "downloads": 214
+      "downloads": 149
     },
     {
       "category": "3.10",
@@ -33,17 +28,17 @@
     {
       "category": "3.10",
       "date": "2024-11",
-      "downloads": 184
+      "downloads": 240
     },
     {
-      "category": "3.11",
-      "date": "2024-05",
-      "downloads": 40
+      "category": "3.10",
+      "date": "2024-12",
+      "downloads": 48
     },
     {
       "category": "3.11",
       "date": "2024-06",
-      "downloads": 215
+      "downloads": 151
     },
     {
       "category": "3.11",
@@ -68,17 +63,17 @@
     {
       "category": "3.11",
       "date": "2024-11",
-      "downloads": 184
+      "downloads": 240
     },
     {
-      "category": "3.12",
-      "date": "2024-05",
-      "downloads": 40
+      "category": "3.11",
+      "date": "2024-12",
+      "downloads": 48
     },
     {
       "category": "3.12",
       "date": "2024-06",
-      "downloads": 212
+      "downloads": 148
     },
     {
       "category": "3.12",
@@ -103,17 +98,17 @@
     {
       "category": "3.12",
       "date": "2024-11",
-      "downloads": 186
+      "downloads": 242
     },
     {
-      "category": "3.8",
-      "date": "2024-05",
-      "downloads": 40
+      "category": "3.12",
+      "date": "2024-12",
+      "downloads": 48
     },
     {
       "category": "3.8",
       "date": "2024-06",
-      "downloads": 218
+      "downloads": 154
     },
     {
       "category": "3.8",
@@ -138,7 +133,12 @@
     {
       "category": "3.8",
       "date": "2024-11",
-      "downloads": 186
+      "downloads": 242
+    },
+    {
+      "category": "3.8",
+      "date": "2024-12",
+      "downloads": 48
     },
     {
       "category": "3.9",
@@ -157,13 +157,8 @@
     },
     {
       "category": "null",
-      "date": "2024-05",
-      "downloads": 1
-    },
-    {
-      "category": "null",
       "date": "2024-06",
-      "downloads": 41
+      "downloads": 17
     },
     {
       "category": "null",
@@ -188,7 +183,12 @@
     {
       "category": "null",
       "date": "2024-11",
-      "downloads": 231
+      "downloads": 235
+    },
+    {
+      "category": "null",
+      "date": "2024-12",
+      "downloads": 4
     }
   ],
   "package": "csaf-lint",
