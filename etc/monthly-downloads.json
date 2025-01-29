@@ -2,11 +2,6 @@
   "data": [
     {
       "category": "3.10",
-      "date": "2024-07",
-      "downloads": 8
-    },
-    {
-      "category": "3.10",
       "date": "2024-08",
       "downloads": 258
     },
@@ -33,12 +28,7 @@
     {
       "category": "3.10",
       "date": "2025-01",
-      "downloads": 216
-    },
-    {
-      "category": "3.11",
-      "date": "2024-07",
-      "downloads": 8
+      "downloads": 226
     },
     {
       "category": "3.11",
@@ -68,12 +58,7 @@
     {
       "category": "3.11",
       "date": "2025-01",
-      "downloads": 220
-    },
-    {
-      "category": "3.12",
-      "date": "2024-07",
-      "downloads": 8
+      "downloads": 228
     },
     {
       "category": "3.12",
@@ -103,12 +88,7 @@
     {
       "category": "3.12",
       "date": "2025-01",
-      "downloads": 218
-    },
-    {
-      "category": "3.8",
-      "date": "2024-07",
-      "downloads": 8
+      "downloads": 226
     },
     {
       "category": "3.8",
@@ -138,7 +118,7 @@
     {
       "category": "3.8",
       "date": "2025-01",
-      "downloads": 216
+      "downloads": 224
     },
     {
       "category": "3.9",
@@ -178,7 +158,7 @@
     {
       "category": "null",
       "date": "2025-01",
-      "downloads": 297
+      "downloads": 309
     }
   ],
   "package": "csaf-lint",
